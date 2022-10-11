@@ -6,6 +6,7 @@ export default function Febre(){
     const [temp, setTemp] = useState()
 
     const [res, setRes] = useState()
+    const navigate = useNavigate();
 
 
     function febre(){
@@ -40,6 +41,18 @@ export default function Febre(){
             <input placeholder="temperatura" value={temp} onChange={(e) => setTemp(e.target.value)} />
 
             to com febre? {res}
+
+            <button
+            className="btn-simple-acai"
+            onClick={async () => {
+                try {
+                    navigate("/")
+                } catch (err) {
+                    
+                }
+            }}>
+            Voltar pra home
+        </button>
         </main>
     )
 }

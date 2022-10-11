@@ -12,12 +12,17 @@ export default function Signo() {
     
 
     function Calcular() {
+        try{
         if(mes == 'setembro' && dia >= 23 || 'outubro' && dia <=22){
             setFinal('seu signo é libra doidão')
 
         }
         else{
             setFinal('seu signo n é libra mané')
+        }}
+        catch(err){
+            setFinal("tetetetetentou mas n deu certo")
+
         }
 
       

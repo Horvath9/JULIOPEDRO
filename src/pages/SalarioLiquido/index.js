@@ -12,6 +12,7 @@ export default function SalarioLiquido() {
 
 
     function CalcularSalario() {
+        try{
         if (salario >= 0 && bonus >= 0 && desc >= 0) {
            
             let total = salario + ((salario/100) * bonus);
@@ -23,6 +24,10 @@ export default function SalarioLiquido() {
 
         else {
             setTotal('invalidoo')
+        }}
+        catch(err){
+            setTotal("erorr")
+
         }
     }
 
