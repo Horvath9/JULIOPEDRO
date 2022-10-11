@@ -17,7 +17,8 @@ export default function Acai() {
         let desconto = total * desc / 100;
 
         let final = total - desconto;
-        setTotal(final)}
+        setTotal(final)
+    }
 
 
         

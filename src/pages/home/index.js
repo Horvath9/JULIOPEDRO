@@ -78,7 +78,38 @@ export default function Index(){
         </button>
     </div>
     
+
+
+
+
     
+    <div className="div-btn-salario">
+        <button
+            className="btn-simple-salario"
+            onClick={async () => {
+                try {
+                    navigate("/VIagem")
+                } catch (err) {
+                    
+                }
+            }}>
+            Seuvagem
+        </button>
+    </div>
+    
+    <div className="div-btn-salario">
+        <button
+            className="btn-simple-salario"
+            onClick={async () => {
+                try {
+                    navigate("/febre")
+                } catch (err) {
+                    
+                }
+            }}>
+            febri
+        </button>
+    </div>
 
     </section>
 
