@@ -10,6 +10,9 @@ export default function Sorveteria() {
    
 
     function Calcular() {
+        try{
+
+        
         let total = ''
         
        if( gramas <= 0){
@@ -22,7 +25,12 @@ export default function Sorveteria() {
         else{
             total = (gramas) * 0.035
         }
-    setFinal(total.toFixed([2]))
+
+    setFinal(total.toFixed([2]))}
+    catch(err){
+        setFinal("safdiuawfdsoijh")
+
+    }
     }
 
     useEffect(() => {

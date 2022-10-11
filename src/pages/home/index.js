@@ -83,9 +83,9 @@ export default function Index(){
 
 
     
-    <div className="div-btn-salario">
+    <div className="div-btn-viagem">
         <button
-            className="btn-simple-salario"
+            className="btn-simple-viagem"
             onClick={async () => {
                 try {
                     navigate("/VIagem")
@@ -97,9 +97,9 @@ export default function Index(){
         </button>
     </div>
     
-    <div className="div-btn-salario">
+    <div className="div-btn-febre">
         <button
-            className="btn-simple-salario"
+            className="btn-simple-febre"
             onClick={async () => {
                 try {
                     navigate("/febre")

@@ -12,6 +12,9 @@ export default function Acai() {
     const [total, setTotal] = useState(0)
 
     function Calcular() {
+        try{
+
+        
         if(qtdPeq >= 0 && qtdMed >= 0 && qtdGrande >= 0 && desc >=0){
         let total = qtdPeq * 13.50 + qtdMed * 15 + (qtdGrande * 17.50);
         let desconto = total * desc / 100;
@@ -24,6 +27,10 @@ export default function Acai() {
         
         else{
             setTotal('invaaliddoooo')
+        }}
+        catch(err){
+            setTotal("iuhgfdsgauhasdfguhijrsa")
+
         }
     }
 
